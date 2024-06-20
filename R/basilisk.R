@@ -875,6 +875,7 @@
       'patsy==0.5.6',
       'pcre2==10.43',
       'pexpect==4.9.0',
+      'pillow==10.3.0 --no-binary pillow',
       'pip==24.0',
       'pkginfo==1.10.0',
       'platformdirs==4.2.2',
