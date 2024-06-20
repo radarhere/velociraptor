@@ -812,7 +812,7 @@
       'libgrpc==1.62.2',
       'libhwloc==2.10.0',
       'libiconv==1.17',
-      'libjpeg-turbo==3.0.0',
+      'libjpeg-turbo==3.0.3',
       'liblapack==3.9.0',
       'libllvm14==14.0.6',
       'libnghttp2==1.58.0',
