@@ -200,10 +200,6 @@ jobs:
           sessioninfo::session_info(pkgs, include_base = TRUE)
         shell: Rscript {0}
 
-      - name: Debug
-        run: |
-          ls /github/home/.cache/R/basilisk/1.17.0/velociraptor/1.15.4/env/lib/python3.9/site-packages/PIL/../../../
-
       - name: Run CMD check
         env:
           _R_CHECK_CRAN_INCOMING_: false
