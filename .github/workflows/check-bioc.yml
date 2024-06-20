@@ -118,7 +118,7 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           sysreqs=$(Rscript -e 'cat("apt-get update -y && apt-get install -y", paste(gsub("apt-get install -y ", "", remotes::system_requirements("ubuntu", "20.04")), collapse = " "))')
-          sysreqs=$(Rscript -e 'cat("apt-get remove -y libjpeg-dev && apt-get install -y libjpeg-turbo8-dev")')
+          sysreqs=$(Rscript -e 'cat("apt-get remove -y libjpeg-dev && apt-get install -y libjpeg9-dev")')
           echo $sysreqs
           sudo -s eval "$sysreqs"
 
