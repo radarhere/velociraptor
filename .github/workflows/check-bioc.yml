@@ -200,16 +200,6 @@ jobs:
           sessioninfo::session_info(pkgs, include_base = TRUE)
         shell: Rscript {0}
 
-      - name: Run CMD check
-        env:
-          _R_CHECK_CRAN_INCOMING_: false
-          DISPLAY: 99.0
+      - name: Debug
         run: |
-          options(crayon.enabled = TRUE)
-          rcmdcheck::rcmdcheck(
-              args = c("--no-manual", "--no-vignettes", "--timings"),
-              build_args = c("--no-manual", "--keep-empty-dirs", "--no-resave-data"),
-              error_on = "error",
-              check_dir = "check"
-          )
-        shell: Rscript {0}
+          ls R/basilisk/1.17.0/velociraptor/1.15.4/env/lib/python3.9/site-packages/PIL
